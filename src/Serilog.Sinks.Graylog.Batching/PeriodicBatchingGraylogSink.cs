@@ -75,7 +75,7 @@ namespace Serilog.Sinks.Graylog.Batching
             catch (Exception exc)
             {
                 SelfLog.WriteLine("Oops something going wrong {0}", exc);
-                return Task.CompletedTask;
+                return Task.FromResult("");
             }
         }
 
